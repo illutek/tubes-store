@@ -1,0 +1,30 @@
+//=========================
+// @@ ++ Quicktabs
+//=========================
+
+.block-quicktabs {
+  margin-top: 30px;
+}
+
+.quicktabs-wrapper {
+  .quicktabs_main {
+    border: none;
+  }
+  ul.quicktabs-tabs.quicktabs-style-basic {
+    height: 34px;
+    a {
+      font-size: 1.4em!important;
+      font-weight: normal!important;
+    }
+    li {
+      padding: 15px;
+      border: none;
+      &.active {
+        padding: 15px;
+        border: solid 1px #c5c5c5;
+        border-bottom: none;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,23 @@
+//Use
+//@include boxshadow(); dit de standaard zoals hieronder
+//Overschrijven  @include boxshadow(5px, 4px, 8px , rgba(100,100,100, .6));
+@mixin boxshadow($h: 0px, $v: 0px, $b:5px, $brand-color: rgba(170,170,170,.8)){
+  -webkit-box-shadow : $h $v $b $brand-color;
+  -moz-box-shadow : $h $v $b $brand-color;
+  box-shadow : $h $v $b $brand-color;
+}
+
+//Use
+//Button mixin
+//@include button();
+//
+@mixin button($mt: 10px, $w: 100%,$bcg: $grey, $br: none, $pa: 10px 0, $hover: #ffffff){
+  margin-top: $mt;
+  width: $w;
+  background: $bcg;
+  border: $br;
+  padding: $pa;
+  &:hover {
+    color: $hover;
+  }
+}

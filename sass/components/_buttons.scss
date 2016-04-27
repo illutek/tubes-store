@@ -1,0 +1,31 @@
+//==============================================
+// ## ++ Buttons
+//==============================================
+
+.btn-cart {
+  @extend %buttonCart;
+  @include roundcorners(0px);
+}
+
+.btn-default, .button {
+  @extend %buttonAll;
+  @include roundcorners(0px);
+  &:hover {
+    background: $grey;
+    color: #ffffff;
+  }
+}
+
+.btn-search {
+  @extend %buttonAll;
+  margin-top: 0;
+}
+
+.btn_more-info {
+  @extend .btn-default;
+  width: 100%;
+}
+
+input[type='submit']{
+  @include roundcorners(0px);
+}

@@ -1,0 +1,18 @@
+//===========================================
+// @@ ++ User login region on page.tpl.php
+//==========================================
+.user-region {
+  background: #ffffff;
+}
+
+.navbar-toggle {
+  .icon-bar {
+    background-color: black;
+  }
+}
+
+.dropdown-menu>li>a {
+  &:hover {
+    color: $hover-color;
+  }
+}

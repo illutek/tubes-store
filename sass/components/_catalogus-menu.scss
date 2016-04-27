@@ -1,0 +1,17 @@
+//=====================================
+// ## ++ Catalogus menu
+//====================================
+
+ul.catalog.menu {
+  padding: 10px;
+  li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+    padding: 5px 0;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

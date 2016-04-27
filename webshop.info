@@ -1,0 +1,18 @@
+name = Webshop Tubes
+description = Webshop voor de tubes verkoop Alcon
+
+core = 7.x
+
+;CSS
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/style.css
+
+;JS
+scripts[]   =   js/bootstrap.min.js
+scripts[]   =   js/to_top.js
+
+;REGIONS
+regions[content]        = Content
+regions[sidebar_first]  = Zijbalk
+regions[news]           = Nieuws
+regions[watched]        = Most watched

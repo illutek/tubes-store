@@ -1,0 +1,97 @@
+//==============================================
+// ## ++ Products
+//==============================================
+
+//teaser view van products
+.product_wrapper_teaser {
+  padding: 10px;
+  width: 205px;
+  float: left;
+}
+
+.region-watched {
+  .product_wrapper_teaser {
+    @extend .product_wrapper_teaser;
+    padding: 10px 10px 25px;
+    width: 185px;
+  }
+}
+
+.product_list {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+    .item {
+      border: solid 1px #d7d7d7;
+      padding: 10px;
+      &:hover {
+        border: solid 1px #aaaaaa;
+        @include boxshadow();
+      }
+      img {
+        width: 100%;
+        height: auto;
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
+
+// ============================================
+// opmaak pager onder producten
+// ============================================
+.item-list ul li {
+  margin: 0;
+}
+.pager li>a, .pager li>span {
+  border-radius: 0;
+}
+
+// ================================================
+// de node product
+// ================================================
+.product_wrapper {
+  padding: 50px;
+  margin-bottom: 25px;
+  @include boxshadow();
+  .product_img {
+    overflow: hidden;
+    min-height: 200px;
+    .logo-product {
+      margin-top: 15px;
+    }
+  }
+  .product_info {
+    .sku {
+      font-weight: bold;
+    }
+    .add-to-cart {
+      .form-type-uc-quantity {
+        width: 200px;
+        float: left;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        input[type=text] {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .message-registered {
+    padding: 15px;
+    .fa-user {
+      color: $hover-color;
+      display: inline-block;
+    }
+  }
+  .sell-price {
+    padding: 2px 5px;
+    background: $hover-color;
+    display: inline-block;
+    margin: 10px 0;
+  }
+}
+
+
+

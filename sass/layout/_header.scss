@@ -1,0 +1,18 @@
+//====================================
+// ## ++ Header
+//====================================
+
+.logo {
+  margin: 15px 0;
+  color: white;
+  h1  {
+    &.site_name {
+      font-size: $fontsize-basic +2.00em; //32px / 16px
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
