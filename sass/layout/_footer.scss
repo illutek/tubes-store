@@ -7,10 +7,11 @@ footer {
     color: $grey-dark;
     min-height: 50px;
     padding: 15px;
-
+    a {
+      color: white;
+      &:hover {
+        color: $grey-dark;
+      }
+    }
   }
-}
-
-.mail-chimp {
-  font-size: 20px;
 }

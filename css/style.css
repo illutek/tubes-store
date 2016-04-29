@@ -140,9 +140,10 @@ footer {
     color: #333333;
     min-height: 50px;
     padding: 15px; }
-
-.mail-chimp {
-  font-size: 20px; }
+    footer .footer-wrap a {
+      color: white; }
+      footer .footer-wrap a:hover {
+        color: #333333; }
 
 .user-region {
   background: #ffffff; }
@@ -256,9 +257,13 @@ footer {
       margin-top: 15px; }
   .product_wrapper .product_info .sku {
     font-weight: bold; }
-  .product_wrapper .product_info .add-to-cart .form-type-uc-quantity {
+  .product_wrapper .product_info .stock {
     width: 200px;
     float: left;
+    margin-top: 2.8em; }
+  .product_wrapper .product_info .add-to-cart .form-type-uc-quantity {
+    width: 200px;
+    float: right;
     margin-top: 1.5em;
     margin-bottom: 1.5em; }
     .product_wrapper .product_info .add-to-cart .form-type-uc-quantity input[type=text], .product_wrapper .product_info .add-to-cart .form-type-uc-quantity select[type=text] {
@@ -278,6 +283,9 @@ footer {
       margin-right: 15px; }
       .product_wrapper .sell-price .sell-price__price .field-item.even {
         color: white; }
+
+.views-exposed-form .views-widget {
+  margin-top: 20px; }
 
 .view-all-products table {
   width: 100%; }
@@ -368,6 +376,13 @@ table.cart-block-summary {
   display: none; }
 .uc-cart-checkout-form .btn-cancel {
   margin-right: 15px; }
+
+table.order-review-table td.price, table.order-review-table th.price {
+  display: none; }
+table.cart-review {
+  width: 100%; }
+  table.cart-review th, table.cart-review tr {
+    padding: 10px; }
 
 .list-address-wrapper {
   margin-left: 25px; }

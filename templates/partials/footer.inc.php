@@ -14,9 +14,7 @@
                 <p>Pannensman 23A<br>B-3530 Helchteren<br>Limburg Belgium<br> +32(0)476346326<br>Or<br>+32(0)11526034</p>
             </div>
             <div class="col-md-6">
-                <p><a href="<?php print base_path() ?>legal">
-                        <?php print t("Terms and Conditions"); ?>
-                    </a>  |
+                <p>
                     <a href="<?php print base_path() ?>cookies">
                         <?php print t("Cookies"); ?>
                     </a>

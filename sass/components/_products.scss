@@ -76,10 +76,15 @@
     .sku {
       font-weight: bold;
     }
+    .stock {
+      width: 200px;
+      float: left;
+      margin-top: 2.8em;
+    }
     .add-to-cart {
       .form-type-uc-quantity {
         width: 200px;
-        float: left;
+        float: right;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
         input[type=text] {
@@ -115,6 +120,11 @@
 // =========================================
 // All product table
 // =========================================
+.views-exposed-form {
+  .views-widget {
+    margin-top: 20px;
+  }
+}
 
 .view-all-products {
   table {

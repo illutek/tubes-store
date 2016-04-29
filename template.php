@@ -56,10 +56,11 @@ function webshop_preprocess_page(&$variables)
 function webshop_preprocess_node(&$variables){
     $variables['details'] = '<div class="details">';
     $variables['details'].= '<i class="fa fa-info"></i> ';
-    $variables['details'].= t('Details');
+    $variables['details'].= t('More details');
     $variables['details'].= '</div>';
 
     if (module_exists('uc_product') && uc_product_is_product($variables)){
+        $variables['uc_image_teaser'] = drupal_render($variables['content']['uc_product_image'][0]);
         $variables['uc_image'] = drupal_render($variables['content']['uc_product_image']);
         $variables['uc_sellPrice'] = drupal_render($variables['content']['sell_price']);
         $variables['uc_body'] = drupal_render($variables['content']['body']);
@@ -94,6 +95,9 @@ function webshop_preprocess_button(&$variables)
         $variables['element']['#attributes']['class'][] = 'btn-remove';
     }
     if (stristr($variables['element']['#value'], 'Submit order') !== FALSE) {
+        $variables['element']['#attributes']['class'][] = 'btn-cart';
+    }
+    if (stristr($variables['element']['#value'], 'Apply') !== FALSE) {
         $variables['element']['#attributes']['class'][] = 'btn-cart';
     }
     if (stristr($variables['element']['#value'], 'Search') !== FALSE) {
