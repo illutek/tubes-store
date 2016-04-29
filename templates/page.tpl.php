@@ -20,12 +20,6 @@
             <?php endif; ?>
             <main class="<?php print $contentlayout; ?>">
                 <div class="row">
-                    <?php if ($page['news']): ?>
-                        <div class="col-md-12 news">
-                            <?php print render($page['news']); ?>
-                        </div>
-                    <?php endif; ?>
-
                     <div class="col-md-12 content-wrap">
                         <?php print render($title_prefix); ?>
 
@@ -53,6 +47,11 @@
 
                         <?php print render($page['content']); ?>
                     </div>
+                    <?php if ($page['news']): ?>
+                        <div class="col-md-12 news">
+                            <?php print render($page['news']); ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </main>
         </div>

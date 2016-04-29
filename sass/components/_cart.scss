@@ -15,6 +15,9 @@
   }
   .cart-block-icon-full {
   }
+  .cart-block-summary-total {
+    display: none;
+  }
 }
 
 table.cart-block-summary {
@@ -39,9 +42,19 @@ table.cart-block-summary {
       color: #000000;
     }
   }
+  .price {
+    display: none;
+  }
+  th {
+    background-color: $logocolor;
+    padding: 10px;
+  }
   td {
     padding: 5px;
     vertical-align: bottom;
+    &.subtotal {
+      display: none;
+    }
   }
   tr {
     background-color: transparent;

@@ -41,11 +41,21 @@
 // ============================================
 // opmaak pager onder producten
 // ============================================
-.item-list ul li {
-  margin: 0;
+.item-list {
+  ul {
+    li {
+      margin: 0;
+    }
+    &.pager {
+      margin-top: 20px;
+    }
+  }
 }
-.pager li>a, .pager li>span {
-  border-radius: 0;
+
+.pager {
+  li > a, li > span {
+    border-radius: 0;
+  }
 }
 
 // ================================================
@@ -86,12 +96,39 @@
     }
   }
   .sell-price {
-    padding: 2px 5px;
-    background: $hover-color;
     display: inline-block;
     margin: 10px 0;
+    .sell-price__price {
+      padding: 10px 15px;
+      background: $hover-color;
+      float: left;
+      margin-right: 15px;
+      .field-item {
+        &.even {
+          color: white;
+        }
+      }
+    }
   }
 }
 
+// =========================================
+// All product table
+// =========================================
+
+.view-all-products {
+  table {
+    width: 100%;
+    th {
+      font-weight: bold;
+      padding: 15px;
+      background-color: $logocolor;
+      color: white;
+    }
+    td {
+      border-bottom: solid 1px $logocolor;
+    }
+  }
+}
 
 

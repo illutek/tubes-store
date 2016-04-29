@@ -7,7 +7,8 @@
   color: white;
   h1  {
     &.site_name {
-      font-size: $fontsize-basic +2.00em; //32px / 16px
+      font-size: $fontsize-basic +2.50em; //40px / 16px
+      font-weight: bold;
     }
   }
   img {

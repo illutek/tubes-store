@@ -35,7 +35,7 @@
                         print '<li class="first dropdown">' . '<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'
                             . '<i class="fa fa-user fa-lg"></i>' . 'My account' . '<span class="caret"></span></a>' .
                             '<ul class="dropdown-menu">' .
-                            '<li>' . '<a href="' . url('user/' . $user->uid) . '">' . t('My Chartage account') . '</a></li>' .
+                            '<li>' . '<a href="' . url('user/' . $user->uid) . '">' . '<i class="fa fa-user fa-lg"></i>' . t('My account') . '</a></li>' .
                             '<li>' . '<a href="' . url('user/' . $user->uid . '/edit') . '">' . '<i class="fa fa-pencil fa-fw"></i>' . t('Edit') . '</a></li>' .
                             '<li>' . '<a href="' . url('user/' . $user->uid . '/addresses') . '">' . '<i class="fa fa-truck fa-fw"></i>' . t('My addresses') . '</a>' . '</li>' .
                             '<li>' . '<a href="' . url('user/' . $user->uid . '/orders') . '">' . '<i class="fa fa-book fa-fw"></i>' . t('My orders') . '</a></li>' .
@@ -57,7 +57,8 @@
                         </li>';
                     } ?>
                     <!-- link naar alle producten -->
-                    <?php print '<li>' . '<a href=' . base_path() . 'all-products>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('All products') . '</a></li>'; ?>
+                    <?php print '<li>' . '<a href=' . base_path() . 'all-products>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('All tubes') . '</a></li>'; ?>
+                    <?php print '<li>' . '<a href=' . base_path() . 'shipping-rates>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('Shipping rates') . '</a></li>'; ?>
 
             </ul>
             <!-- cart icon met aantal items -->
