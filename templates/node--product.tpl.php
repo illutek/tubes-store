@@ -112,16 +112,7 @@ if ($teaser): ?>
                          */
                         print $uc_addCart;
                         ?>
-                        <div class="message-registered">
-                            <p><i class="fa fa-user"></i>
-                                <?php print t("Only a registered user can place an order."); ?>
-                            </p>
 
-                            <p><a href="<?php print base_path() ?>/user/register">
-                                    <?php print t("Register"); ?>
-                                </a>
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
