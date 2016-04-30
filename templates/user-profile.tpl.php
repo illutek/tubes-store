@@ -41,8 +41,7 @@
         print '<i class="fa fa-home fa-fw"></i>' . '<a href=' . base_path() .
             '>' . $toFront . '</a></br>';
         print '<i class="fa fa-circle-o fa-fw"></i>' . '<a href=' . base_path() .
-            'all-products>' . $allProducts . '</a></br>';
-        print '<a href="http://eepurl.com/Iu6Kj" target="_blank">' .
-            '<i class="fa fa-envelope-o fa-fw"></i>' . t("Subscribe to our mailing list"); ?>
+            'all-products>' . $allProducts . '</a>';
+        ?>
     </div>
 </div>

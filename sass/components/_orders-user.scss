@@ -7,6 +7,36 @@
     width: 100%;
     td {
       padding: 5px;
+      &.views-field-order-total {
+        display: none;
+      }
+    }
+    th {
+      &.views-field-order-total {
+        display: none;
+      }
+    }
+  }
+}
+
+// order overzicht onder user account
+.order-pane {
+  td {
+    &.cost, &.price, &.total {
+      display: none;
+    }
+  }
+  th {
+    &.cost, &.price, &.total {
+      display: none;
+    }
+  }
+  table {
+    &.order-pane-table {
+      width: 100%;
+    }
+    &.line-item-table {
+      display: none;
     }
   }
 }

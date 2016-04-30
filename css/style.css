@@ -319,6 +319,19 @@ form.webform-client-form .grippie {
   width: 100%; }
   .view-uc-orders-user table td {
     padding: 5px; }
+    .view-uc-orders-user table td.views-field-order-total {
+      display: none; }
+  .view-uc-orders-user table th.views-field-order-total {
+    display: none; }
+
+.order-pane td.cost, .order-pane td.price, .order-pane td.total {
+  display: none; }
+.order-pane th.cost, .order-pane th.price, .order-pane th.total {
+  display: none; }
+.order-pane table.order-pane-table {
+  width: 100%; }
+.order-pane table.line-item-table {
+  display: none; }
 
 .block-uc-cart {
   border: solid 1px #cccccc;
