@@ -104,18 +104,3 @@ function webshop_preprocess_button(&$variables)
         $variables['element']['#attributes']['class'][] = 'btn-search';
     }
 }
-
-/**
- * Implements hook_form_FORM_ID_alter().
- */
-function webshop_form_user_login_alter(&$form, &$form_state) {
-    $form['name']['#title'] = variable_get('email_registration_login_with_username', TRUE)
-        ? t('Your e-mail')
-        : t('E-mail');
-    $form['name']['#description'] = variable_get('email_registration_login_with_username', TRUE)
-        ? t('Enter your e-mail address.')
-        : t('Enter your e-mail address.');
-    $form['name']['#element_validate'][] = 'email_registration_user_login_validate';
-    $form['pass']['#description'] = t('Enter the password that accompanies your e-mail.');
-}
-
