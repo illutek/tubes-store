@@ -134,11 +134,24 @@
       padding: 15px;
       background-color: $logocolor;
       color: white;
+      a {
+      }
     }
     td {
       border-bottom: solid 1px $logocolor;
     }
   }
+}
+
+.noFilter {
+  background-color: $logocolor;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.views-widget-filter-field_telefunken_value {
+  margin: 0 25px;
 }
 
 

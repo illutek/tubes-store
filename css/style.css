@@ -11,9 +11,10 @@
   width: 100%;
   background: #138ca4;
   border: none;
-  padding: 10px; }
+  padding: 10px;
+  color: white; }
   .btn-cart:hover {
-    color: #ffffff; }
+    color: #000000; }
 
 .rounded {
   -moz-border-radius: 5px;
@@ -297,6 +298,15 @@ footer {
   .view-all-products table td {
     border-bottom: solid 1px #138ca4; }
 
+.noFilter {
+  background-color: #138ca4;
+  padding: 20px;
+  margin-top: 20px;
+  color: white; }
+
+.views-widget-filter-field_telefunken_value {
+  margin: 0 25px; }
+
 ul.catalog.menu {
   padding: 10px; }
   ul.catalog.menu li.leaf {
@@ -332,6 +342,11 @@ form.webform-client-form .grippie {
   width: 100%; }
 .order-pane table.line-item-table {
   display: none; }
+
+.orderMessageBlock {
+  background-color: #138ca4;
+  color: white;
+  padding: 40px; }
 
 .block-uc-cart {
   border: solid 1px #cccccc;
@@ -421,7 +436,9 @@ tr.field-address_name {
     color: #ffffff; }
 
 .btn-search {
-  margin-top: 0; }
+  background: #138ca4;
+  margin-top: 0;
+  padding: 8px 12px 6px; }
 
 .btn_more-info {
   width: 100%; }
@@ -430,6 +447,11 @@ input[type='submit'], select[type='submit'] {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px; }
+
+.block_btn_all_products a {
+  color: #000000; }
+  .block_btn_all_products a:hover {
+    color: white; }
 
 #mc_embed_signup form {
   display: block;

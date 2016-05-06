@@ -12,6 +12,7 @@ scripts[]   =   js/bootstrap.min.js
 scripts[]   =   js/to_top.js
 
 ;REGIONS
+regions[message_order]  = Message Order
 regions[content]        = Content
 regions[sidebar_first]  = Zijbalk
 regions[news]           = Nieuws

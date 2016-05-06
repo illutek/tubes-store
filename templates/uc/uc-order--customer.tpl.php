@@ -124,14 +124,7 @@
                                     </table>
                                 </td>
                             </tr>
-                            <tr>
-                                <td nowrap="nowrap">
-                                    <b><?php print t('Order Grand Total:'); ?></b>
-                                </td>
-                                <td width="98%">
-                                    <b><?php print $order_total; ?></b>
-                                </td>
-                            </tr>
+
                             <tr>
                                 <td colspan="2" bgcolor="#b27d00" style="color: white;">
                                     <b><?php print t('Payment Method:'); ?></b>
@@ -200,10 +193,10 @@
 
                                         <tr>
                                             <td nowrap="nowrap">
-                                                <?php print t('Products Subtotal:'); ?>&nbsp;
+                                                <?php // print t('Products Subtotal:'); ?>&nbsp;
                                             </td>
                                             <td width="98%">
-                                                <?php print $order_subtotal; ?>
+                                                <?php // print $order_subtotal; ?>
                                             </td>
                                         </tr>
 
@@ -219,21 +212,10 @@
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>
-                                        <tr>
-                                            <td>&nbsp;</td>
-                                            <td>------</td>
-                                        </tr>
-                                        <tr>
-                                            <td nowrap="nowrap">
-                                                <b><?php print t('Total for this order exclusive VAT:'); ?>&nbsp;</b>
-                                            </td>
-                                            <td>
-                                                <b><?php print $order_total; ?></b>
-                                            </td>
-                                        </tr>
+
                                         <tr>
                                             <td colspan="2">
-                                                <br/><br/><b><?php print t('Products on order exclusive VAT:'); ?>&nbsp;</b>
+                                                <b><?php print t('Products on order:'); ?>&nbsp;</b>
 
                                                 <table width="100%"
                                                        style="font-family: verdana, arial, helvetica; font-size: small;">
@@ -244,11 +226,8 @@
                                                                 <b><?php print $product->qty; ?> x </b>
                                                             </td>
                                                             <td width="98%">
-
-                                                                <b><?php print $product->title; ?>
-                                                                    - <?php print $product->total_price; ?></b>
-                                                                <?php print $product->individual_price; ?><br/>
-                                                                <?php print t('SKU'); ?>: <?php print $product->model; ?><br/>
+                                                                <b><?php print $product->title; ?></b>
+                                                                <br/>
                                                                 <?php print $product->details; ?>
                                                             </td>
                                                         </tr>
@@ -271,8 +250,8 @@
                                     <tr>
                                         <td>
                                             <p><b><?php print t('Belgium:'); ?></b></p>
-                                            <p><?php print t('Above €250.00 excl. VAT: free transport.'); ?></p>
-                                            <p><?php print t('Below €250.00 excl. VAT: €10.00 +VAT'); ?></p>
+                                            <p><?php print t('Above €200.00: free transport.'); ?></p>
+                                            <p><?php print t('Below €200.00: €6.00 with bPost'); ?></p>
                                             <p><b><?php print t('abroad:'); ?></b></p>
                                             <p><?php print t('customer always pays the transportation depending on dimensions and weight of the box. The transportation costs will be put on the bill.'); ?></p>
                                         </td>

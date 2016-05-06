@@ -18,7 +18,9 @@
 
 .btn-search {
   @extend %buttonAll;
+  background: $logocolor;
   margin-top: 0;
+  padding: 8px 12px 6px;
 }
 
 .btn_more-info {
@@ -28,4 +30,16 @@
 
 input[type='submit']{
   @include roundcorners(0px);
+}
+
+// button in de zijbalk met het totaal aantal tubes, is nu een inhoudstype met een tpl
+// zou dit graag willen omzetten naar een eigen module
+
+.block_btn_all_products {
+  a {
+    color: #000000;
+    &:hover {
+      color: white;
+    }
+  }
 }

@@ -9,7 +9,7 @@ $textMoreInfo = t("Get info about this product");
 ?>
 <!-- link naar meer info form hier node/6 -->
 <div class="col-md-7">
-    <a href="<?php print base_path() ?>node/6?product=<?php print_r($model) ?>">
+    <a href="<?php print base_path() ?>more-info-about?product=<?php print_r($model) ?>">
         <button type="button" class="btn btn-default">
             <i class="fa fa-info fa-lg"></i><?php print $textMoreInfo; ?>
         </button>

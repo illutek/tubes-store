@@ -32,7 +32,8 @@ $hover-color: #138ca4;
   background: $logocolor;
   border: none;
   padding: 10px;
+  color: white;
   &:hover {
-    color: #ffffff;
+    color: #000000;
   }
 }
