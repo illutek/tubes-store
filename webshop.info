@@ -17,3 +17,4 @@ regions[content]        = Content
 regions[sidebar_first]  = Zijbalk
 regions[news]           = Nieuws
 regions[watched]        = Most watched
+regions[footer_third]   = Footer Third
