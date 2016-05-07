@@ -110,6 +110,9 @@ a {
     color: #333333;
     text-decoration: none; }
 
+strong {
+  font-weight: bold; }
+
 input, input[type="checkbox"], select {
   padding: 5px;
   border: solid 1px #aaaaaa; }
@@ -324,6 +327,12 @@ form.webform-client-form input[type='submit'], form.webform-client-form select[t
   width: 50%; }
 form.webform-client-form .grippie {
   display: none; }
+
+.map_contact__wrap {
+  min-height: 275px; }
+  .map_contact__wrap .map {
+    float: left;
+    margin-right: 20px; }
 
 .view-uc-orders-user table {
   width: 100%; }

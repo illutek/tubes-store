@@ -57,9 +57,11 @@
                         </li>';
           } ?>
           <!-- link naar alle producten -->
-          <?php print '<li>' . '<a href=' . base_path() . 'all-products>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('All tubes') . '</a></li>'; ?>
-          <?php print '<li>' . '<a href=' . base_path() . 'all-products?title_op=contains&title=&field_telefunken_value=1>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('Telefunken tubes') . '</a></li>'; ?>
-          <?php print '<li>' . '<a href=' . base_path() . 'shipping-rates>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('Shipping rates') . '</a></li>'; ?>
+          <?php print '<li><a href=' . base_path() . 'all-products>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('All tubes') . '</a></li>'; ?>
+          <?php print '<li><a href=' . base_path() . 'all-products?title_op=contains&title=&field_telefunken_value=1>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('Telefunken tubes') . '</a></li>'; ?>
+          <!-- -->
+          <?php print '<li><a href=' . base_path() . 'contact>' . '<i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>' . t('Contact Us') . '</a></li>'; ?>
+          <?php print '<li><a href=' . base_path() . 'shipping-rates>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('Shipping rates') . '</a></li>'; ?>
 
       </ul>
       <!-- cart icon met aantal items -->
