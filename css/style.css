@@ -259,6 +259,8 @@ footer {
     min-height: 200px; }
     .product_wrapper .product_img .logo-product {
       margin-top: 15px; }
+  .product_wrapper .brand_message {
+    margin-bottom: 25px; }
   .product_wrapper .product_info .sku {
     font-weight: bold; }
   .product_wrapper .product_info .stock {
@@ -278,13 +280,12 @@ footer {
       color: #138ca4;
       display: inline-block; }
   .product_wrapper .sell-price {
-    display: inline-block;
-    margin: 10px 0; }
+    display: inline-block; }
     .product_wrapper .sell-price .sell-price__price {
       padding: 10px 15px;
       background: #138ca4;
       float: left;
-      margin-right: 15px; }
+      margin: 10px 15px 15px 0; }
       .product_wrapper .sell-price .sell-price__price .field-item.even {
         color: white; }
 
@@ -656,6 +657,15 @@ p.search-info {
 @media only screen and (max-width: 479px) {
   /* css code voor smartphones in portrait mode */
   .product_wrapper .btn-default, .product_wrapper .btn_more-info {
-    font-size: 12px; } }
+    font-size: 12px;
+    width: 100%; }
+
+  .sell-price .sell-price__price {
+    width: 100%;
+    text-align: center; } }
+.maintenance-page #content {
+  padding: 100px;
+  background-color: white;
+  color: #000000; }
 
 /*# sourceMappingURL=style.css.map */

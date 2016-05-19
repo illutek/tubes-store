@@ -72,6 +72,9 @@
       margin-top: 15px;
     }
   }
+  .brand_message {
+    margin-bottom: 25px;
+  }
   .product_info {
     .sku {
       font-weight: bold;
@@ -102,12 +105,12 @@
   }
   .sell-price {
     display: inline-block;
-    margin: 10px 0;
+    //margin: 10px 0;
     .sell-price__price {
       padding: 10px 15px;
       background: $hover-color;
       float: left;
-      margin-right: 15px;
+      margin: 10px 15px 15px 0;
       .field-item {
         &.even {
           color: white;

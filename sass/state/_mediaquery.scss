@@ -20,6 +20,13 @@
   .product_wrapper {
     .btn-default {
       font-size: 12px;
+      width: 100%;
+    }
+  }
+  .sell-price {
+    .sell-price__price {
+      width: 100%;
+      text-align: center;
     }
   }
 }
