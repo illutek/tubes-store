@@ -89,42 +89,23 @@ if ($teaser): ?>
 
 
             <div class="sell-price">
-              <?php // print (isset($uc_sellPrice) ? $uc_sellPrice : ''); ?>
-
               <?php
+              /**
+               * variables aangemaakt op template.php newPrice, usedPrice en onRequest
+               */
               $fieldNewPrice = field_get_items('node', $node, 'field_new_price');
               $fieldUsedPrice = field_get_items('node', $node, 'field_secondhand_price');
-              ?>
 
-              <?php
-              if ($fieldNewPrice && $fieldUsedPrice) { ?>
-                <div class="sell-price__price">
-                  <?php
-                  print render($content['field_new_price']);
-                  ?>
-                </div>
-                <div class="sell-price__price">
-                  <?php print render($content['field_secondhand_price']);
-                  ?>
-                </div>
-              <?php
-              } elseif ($fieldNewPrice) { ?>
-                <div class="sell-price__price">
-                  <?php
-                  print render($content['field_new_price']);
-                  ?>
-                </div>
-              <?php } elseif ($fieldUsedPrice) { ?>
-                <div class="sell-price__price">
-                  <?php
-                  print render($content['field_secondhand_price']);
-                  ?>
-                </div>
-              <?php } else { ?>
-                <div class="sell-price__price">
-                  <?php print t('Price on request'); ?>
-                </div>
-              <?php } ?>
+              if ($fieldNewPrice && $fieldUsedPrice) {
+                print $newPrice;
+                print $usedPrice;
+              } elseif ($fieldNewPrice) {
+                print $newPrice;
+              } elseif ($fieldUsedPrice) {
+                print $usedPrice;
+              } else {
+                print $onRequest;
+              } ?>
             </div>
 
             <?php print (isset($uc_body) ? $uc_body : ''); ?>
@@ -137,7 +118,10 @@ if ($teaser): ?>
             print
               '<div class=\'stock\'>' .
               render($content['field_custom_stock']) .
+              '<br>'.
+              render($content['field_brands_amount']) .
               '</div>';
+
             /**
              * uc_addCart komt van template.php add_to_cart = quantity + btn to Cart
              */

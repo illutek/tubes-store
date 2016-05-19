@@ -66,6 +66,18 @@ function webshop_preprocess_node(&$variables){
         $variables['uc_body'] = drupal_render($variables['content']['body']);
         $variables['uc_addCart'] = drupal_render($variables['content']['add_to_cart']);
     }
+
+    $variables['newPrice'] = '<div class="sell-price__price">';
+    $variables['newPrice'].= drupal_render($variables['content']['field_new_price']);
+    $variables['newPrice'].= '</div>';
+
+    $variables['usedPrice'] = '<div class="sell-price__price">';
+    $variables['usedPrice'].= drupal_render($variables['content']['field_secondhand_price']);
+    $variables['usedPrice'].= '</div>';
+
+    $variables['onRequest'] = '<div class="sell-price__price">';
+    $variables['onRequest'].= t('Price on request');
+    $variables['onRequest'].= '</div>';
 }
 
 /**
