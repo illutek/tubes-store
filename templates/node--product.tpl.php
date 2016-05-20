@@ -79,7 +79,7 @@ if ($teaser): ?>
           <div class="col-md-4 product_img">
             <?php
             print (isset($uc_image_teaser) ? $uc_image_teaser : '');
-            print (isset($uc_image) ? $uc_image : '');
+            print '<div class="img_teaser_wrap">' . (isset($uc_image) ? $uc_image : '') . '</div>';
             ?>
           </div>
           <div class="col-md-8 product_info">

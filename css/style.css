@@ -259,6 +259,13 @@ footer {
     min-height: 200px; }
     .product_wrapper .product_img .logo-product {
       margin-top: 15px; }
+    .product_wrapper .product_img .img_teaser_wrap {
+      margin-top: 3px; }
+      .product_wrapper .product_img .img_teaser_wrap img {
+        width: 75px;
+        height: 75px;
+        float: left;
+        margin: 0 10px 10px 0; }
   .product_wrapper .brand_message {
     margin-bottom: 25px; }
   .product_wrapper .product_info .sku {

@@ -71,6 +71,15 @@
     .logo-product {
       margin-top: 15px;
     }
+    .img_teaser_wrap {
+      margin-top: 3px;
+      img {
+        width: 75px;
+        height: 75px;
+        float: left;
+        margin: 0 10px 10px 0;
+      }
+    }
   }
   .brand_message {
     margin-bottom: 25px;
