@@ -8,9 +8,11 @@
 
 /**
  * variables aangemaakt op template.php newPrice, usedPrice en onRequest
+ * Ook onderstaande verplaatst naar template.php
+ * $fieldNewPrice = field_get_items('node', $node, 'field_new_price');
+ * $fieldUsedPrice = field_get_items('node', $node, 'field_secondhand_price');
  */
-$fieldNewPrice = field_get_items('node', $node, 'field_new_price');
-$fieldUsedPrice = field_get_items('node', $node, 'field_secondhand_price');
+
 
 if ($teaser): ?>
   <div class="product_wrapper_teaser">
@@ -53,7 +55,11 @@ if ($teaser): ?>
        * add to cart buiten de a href anders is deze
        * gewoon een link naar de node van het product
        */
-      print $uc_addCart;
+      if ($field_custom_stock[0]["value"] !== "0") {
+        print $uc_addCart;
+      } else {
+        print $outOfStock;
+      }
       ?>
 
     </div>
@@ -127,25 +133,29 @@ if ($teaser): ?>
               include 'partials/more-info-btn.inc.php';
               ?>
             </div>
-            <?php
-            print '<div class=\'stock\'>';
-            print render($content['field_custom_stock']);
-
-            global $user;
-            if (in_array('administrator', array_values($user->roles))) {
-              print render($content['field_brands_amount']);
-            } else {
-              print '';
-            }
-
-            print '</div>'; ?>
-
 
             <?php
+
             /**
              * uc_addCart komt van template.php add_to_cart = quantity + btn to Cart
              */
-            print $uc_addCart;
+            if ($field_custom_stock[0]["value"] !== "0") {
+
+              print '<div class=\'stock\'>';
+              print render($content['field_custom_stock']);
+
+              global $user;
+              if (in_array('administrator', array_values($user->roles))) {
+                print render($content['field_brands_amount']);
+              } else {
+                print '';
+              }
+              print '</div>';
+
+              print $uc_addCart;
+            } else {
+              print $outOfStock;
+            }
             ?>
 
           </div>

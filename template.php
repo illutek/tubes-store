@@ -64,6 +64,7 @@ function webshop_preprocess_node(&$variables){
         $variables['uc_image'] = drupal_render($variables['content']['uc_product_image']);
         $variables['uc_sellPrice'] = drupal_render($variables['content']['sell_price']);
         $variables['uc_body'] = drupal_render($variables['content']['body']);
+
         $variables['uc_addCart'] = drupal_render($variables['content']['add_to_cart']);
     }
 
@@ -78,6 +79,17 @@ function webshop_preprocess_node(&$variables){
     $variables['onRequest'] = '<div class="sell-price__price">';
     $variables['onRequest'].= t('Price on request');
     $variables['onRequest'].= '</div>';
+
+    $variables['outOfStock'] = '<div class="btn-cart out_Of_Stock">';
+    $variables['outOfStock'].= t('This product is out of stock');
+    $variables['outOfStock'].= '</div>';
+
+    /**
+     * Nieuw prijs en gebruikt prijs
+     */
+    $node = $variables['node'];
+    $variables['fieldNewPrice'] = field_get_items('node', $node, 'field_new_price');
+    $variables['fieldUsedPrice'] = field_get_items('node', $node, 'field_secondhand_price');
 }
 
 /**

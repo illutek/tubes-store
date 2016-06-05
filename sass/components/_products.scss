@@ -7,6 +7,10 @@
   padding: 10px;
   width: 205px;
   float: left;
+  .out_Of_Stock {
+    margin-top: 50px;
+    margin-bottom: 13px;
+  }
 }
 
 .region-watched {
@@ -95,6 +99,9 @@
         margin-top: 10px;
       }
     }
+    .out_Of_Stock {
+      margin-top: 25px;
+    }
     .stock {
       width: 200px;
       float: left;
@@ -160,6 +167,13 @@
       border-bottom: solid 1px $logocolor;
     }
   }
+}
+
+// class aangemaakt in de table_display van de all product view in het veld
+// conditional field - dit om de button 'Add to cart' niet te tonen bij stock = 0
+.conditional_field {
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .noFilter {
