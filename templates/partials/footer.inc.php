@@ -10,6 +10,7 @@
   <div class="container">
     <div class="col-md-12 footer-wrap">
       <div class="row">
+
         <div class="col-md-4">
           <h3>Contact information</h3>
 
@@ -41,6 +42,11 @@
         <div class="col-md-4">
           <div class="logo">
             <h2 class="site_name">Tubes Electro</h2>
+          </div>
+          <div class="social">
+            <a href="https://plus.google.com/u/0/107831253753251911145">
+              <img src="<?php print base_path() . path_to_theme(); ?>/images/google_plus-48.png" alt="Goolge+">
+            </a>
           </div>
           <?php print render($page['footer_third']); ?>
         </div>

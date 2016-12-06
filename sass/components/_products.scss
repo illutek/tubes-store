@@ -8,8 +8,13 @@
   width: 205px;
   float: left;
   .out_Of_Stock {
+    // melding out of stock
     margin-top: 50px;
     margin-bottom: 13px;
+    text-align: center;
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -101,6 +106,10 @@
     }
     .out_Of_Stock {
       margin-top: 25px;
+      text-align: center;
+      &:hover {
+        color: white;
+      }
     }
     .stock {
       width: 200px;
@@ -174,6 +183,10 @@
 .conditional_field {
   margin-bottom: 15px;
   text-align: center;
+  border: solid 1px red;
+  &:hover {
+    color: white;
+  }
 }
 
 .noFilter {

@@ -117,8 +117,8 @@ input, input[type="checkbox"], select {
   padding: 5px;
   border: solid 1px #aaaaaa; }
 
-.fa {
-  padding-right: 10px; }
+.info {
+  font-size: 10px; }
 
 .section-wrap {
   background: #ffffff;
@@ -151,6 +151,8 @@ footer {
 
 .user-region {
   background: #ffffff; }
+  .user-region .fa {
+    margin-right: 10px; }
 
 .navbar-toggle .icon-bar {
   background-color: black; }
@@ -222,7 +224,10 @@ footer {
   float: left; }
   .product_wrapper_teaser .out_Of_Stock {
     margin-top: 50px;
-    margin-bottom: 13px; }
+    margin-bottom: 13px;
+    text-align: center; }
+    .product_wrapper_teaser .out_Of_Stock:hover {
+      color: white; }
 
 .region-watched .product_wrapper_teaser {
   padding: 10px 10px 25px;
@@ -280,7 +285,10 @@ footer {
     .product_wrapper .product_info .product_info__sku .product_info__brand {
       margin-top: 10px; }
   .product_wrapper .product_info .out_Of_Stock {
-    margin-top: 25px; }
+    margin-top: 25px;
+    text-align: center; }
+    .product_wrapper .product_info .out_Of_Stock:hover {
+      color: white; }
   .product_wrapper .product_info .stock {
     width: 200px;
     float: left;
@@ -322,7 +330,10 @@ footer {
 
 .conditional_field {
   margin-bottom: 15px;
-  text-align: center; }
+  text-align: center;
+  border: solid 1px red; }
+  .conditional_field:hover {
+    color: white; }
 
 .noFilter {
   background-color: #138ca4;
@@ -484,6 +495,10 @@ input[type='submit'], select[type='submit'] {
   color: #000000; }
   .block_btn_all_products a:hover {
     color: white; }
+.block_btn_all_products .btn-cart {
+  padding: 25px 0; }
+.block_btn_all_products .overview-title {
+  padding-bottom: 15px; }
 
 #mc_embed_signup form {
   display: block;
@@ -669,6 +684,34 @@ fieldset#edit-terms-of-use.form-wrapper {
 
 p.search-info {
   display: none; }
+
+.ctools-auto-submit-full-form {
+  border: solid 1px #138ca4;
+  padding: 0 25px;
+  margin-bottom: 15px; }
+  .ctools-auto-submit-full-form .views-exposed-form .views-widget-filter-field_telefunken_value {
+    margin-bottom: 2em; }
+    .ctools-auto-submit-full-form .views-exposed-form .views-widget-filter-field_telefunken_value .views-widget {
+      margin-top: 10px; }
+  .ctools-auto-submit-full-form .views-exposed-form .views-submit-button {
+    margin-top: 0.5em; }
+    .ctools-auto-submit-full-form .views-exposed-form .views-submit-button .btn {
+      color: white;
+      padding: 12px 35px 10px; }
+      .ctools-auto-submit-full-form .views-exposed-form .views-submit-button .btn:hover {
+        color: black; }
+
+.search-suggestion {
+  background: #138ca4;
+  color: white;
+  margin-top: 15px;
+  padding: 15px; }
+  .search-suggestion p {
+    margin-bottom: 0; }
+  .search-suggestion a {
+    color: black; }
+    .search-suggestion a:hover {
+      color: white; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/ }

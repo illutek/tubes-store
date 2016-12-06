@@ -26,10 +26,11 @@ if ($teaser): ?>
           <div class="body_teaser"><?php print $title; ?></div>
           <?php
           /**
-           *
+           * dit om de prijzen te printen afhankelijk van ingevulde waarden
+           * de variable alle opgebouwd in template.php
+           * todo overbrengen naar een include onderstaande stuk code wordt in de
+           * todo voledige node onderaan ook gebruikt
            */
-          // print (isset($uc_sellPrice) ? $uc_sellPrice : '');
-
 
           if ($fieldNewPrice && $fieldUsedPrice) {
             print $newPrice;
@@ -96,6 +97,8 @@ if ($teaser): ?>
       <div class="row">
         <div class="col-md-4 product_img">
           <?php
+          print '<span class="info">' . '<i class="fa fa-search-plus" aria-hidden="true"></i>' . t('Click on the image to enlarge') . '</span>';
+
           print (isset($uc_image_teaser) ? $uc_image_teaser : '');
           print '<div class="img_teaser_wrap">' . (isset($uc_image) ? $uc_image : '') . '</div>';
           ?>
@@ -107,14 +110,16 @@ if ($teaser): ?>
              * Model van tube en merk (brand)
              */
             print t("Tube: "); ?><?php print_r($model);
-
             print '<span class="product_info__brand">' . render($content['field_tags']) . '</span>';
-
             print '</div>';
             ?>
 
             <div class="sell-price">
               <?php
+              /**
+               * dit om de prijzen te printen afhankelijk van ingevulde waarden
+               * de variable alle opgebouwd in template.php
+               */
               if ($fieldNewPrice && $fieldUsedPrice) {
                 print $newPrice;
                 print $usedPrice;
@@ -138,12 +143,19 @@ if ($teaser): ?>
 
             /**
              * uc_addCart komt van template.php add_to_cart = quantity + btn to Cart
+             * wanneer een produkt is uitgeput wordt er een melding getoond en de
+             * btn add to cart verborgen
+             * todo zou dit graag overbrengen naar de template.php file
              */
             if ($field_custom_stock[0]["value"] !== "0") {
 
               print '<div class=\'stock\'>';
               print render($content['field_custom_stock']);
 
+              /**
+               * field_brands_amount tonen dit enkel aan de administrators
+               * aantal tubes in elke doos
+               */
               global $user;
               if (in_array('administrator', array_values($user->roles))) {
                 print render($content['field_brands_amount']);
