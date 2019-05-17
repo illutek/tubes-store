@@ -12,11 +12,11 @@
   <a href="all-products">
     <div class="btn btn-cart">
       <div class="overview-title">
-        <?php print t('An overview of all tubes'); ?>
+        Click here for an overview <br>of all our electron tubes
       </div>
       <?php
       print render($content['field_total_tubes']);
-      print t(' tubes in stock');
+      print t(' Electron tubes in stock');
       ?>
     </div>
   </a>

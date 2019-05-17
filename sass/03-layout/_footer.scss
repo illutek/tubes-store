@@ -1,0 +1,17 @@
+//================================
+// ## ++ Footer
+//=================================
+footer {
+  background: $logocolor;
+  .footer-wrap {
+    color: $grey-dark;
+    min-height: 50px;
+    padding: 15px;
+    a {
+      color: white;
+      &:hover {
+        color: $grey-dark;
+      }
+    }
+  }
+}

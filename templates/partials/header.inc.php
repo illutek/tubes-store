@@ -9,6 +9,6 @@
 <header class="header-wrap col-md-6">
     <div class="logo">
         <h1 class="site_name">Tubes Electro</h1>
-        <p>West-Europe and American made.</p>
+        <p>New and second-hand electron tubes all brands.</p>
     </div>
 </header>

@@ -1,0 +1,80 @@
+//==========================================
+// ## ++ Globals
+//==========================================
+
+body {
+  background: url("../images/background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1a1e21;
+  background-attachment: fixed;
+  background-position: center bottom;
+  font-family: $font-verdana;
+  font-size: $fontsize-basic;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: $fontsize-basic;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-size: $fontsize-basic +1.25em; //36px / 16px
+}
+
+h2 {
+  font-size: $fontsize-basic +0.875em; //30px / 16px
+}
+
+h3 {
+  font-size: $fontsize-basic +0.5em; //24px / 16px
+}
+
+h4 {
+  font-size: $fontsize-basic +0.125em; //18px / 16px
+}
+
+h5 {
+  font-size: $fontsize-basic;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: $hover-color;
+  &:hover {
+    color: $grey-dark;
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+input {
+  padding: 5px;
+  border: solid 1px $grey;
+}
+
+input[type="checkbox"] {
+  @extend input;
+}
+
+select {
+  @extend input;
+}
+
+//Info vermeldingen
+.info {
+  font-size: 10px;
+}
+

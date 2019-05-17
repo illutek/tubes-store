@@ -1,0 +1,17 @@
+//==========================================
+// ## ++ Order review
+//==========================================
+
+table {
+  &.order-review-table {
+    td.price, th.price {
+      display: none;
+    }
+  }
+  &.cart-review {
+    width: 100%;
+    th, tr {
+      padding: 10px;
+    }
+  }
+}

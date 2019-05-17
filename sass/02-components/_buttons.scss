@@ -1,0 +1,51 @@
+//==============================================
+// ## ++ Buttons
+//==============================================
+
+.btn-cart {
+  @extend %buttonCart;
+  @include roundcorners(0px);
+}
+
+.btn-default, .button {
+  @extend %buttonAll;
+  @include roundcorners(0px);
+  &:hover {
+    background: $grey;
+    color: #ffffff;
+  }
+}
+
+.btn-search {
+  @extend %buttonAll;
+  background: $logocolor;
+  margin-top: 0;
+  padding: 8px 12px 6px;
+}
+
+.btn_more-info {
+  @extend .btn-default;
+  width: 100%;
+}
+
+input[type='submit']{
+  @include roundcorners(0px);
+}
+
+// button in de zijbalk met het totaal aantal tubes, is nu een inhoudstype met een tpl
+// zou dit graag willen omzetten naar een eigen module
+
+.block_btn_all_products {
+  a {
+    color: #000000;
+    &:hover {
+      color: white;
+    }
+  }
+  .btn-cart {
+    padding: 25px 0;
+  }
+  .overview-title {
+    padding-bottom: 15px;
+  }
+}

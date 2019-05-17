@@ -1,54 +1,29 @@
-@import "variabele";
-
 //=========================
-// @@ ++ Mixin
+// @@ ++ ABSTRACTS
 //=========================
-@import "mixin/own-mixin";
-@import "mixin/roundcorners";
-@import "mixin/basicfonts";
+@import '00-abstracts/abstracts-dir';
 
 //=========================
 // @@ ++ Base
 //=========================
-@import "base/reset";
-@import "base/globals";
-
-//=========================
-// @@ ++ Layout
-//=========================
-@import "layout/theme";
-@import "layout/header";
-@import "layout/footer";
+@import "01-base/base-dir";
 
 //========================
 // @@ ++ Components
 //========================
-@import "components/navbar";
-@import "components/to-top";
-@import "components/better-login";
-@import "components/products";
-@import "components/catalogus-menu";
-@import "components/webforms";
-@import "components/orders-user";
-@import "components/message_order";
-@import "components/cart";
-@import "components/cart-checkout";
-@import "components/order-review";
-@import "components/address-book";
-@import "components/buttons";
-@import "components/mail-chimp";
-@import "components/termsOfUse";
-@import "components/terms";
-@import "components/search";
-@import "components/exposed_form";
-@import "components/search-suggestion";
+@import "02-components/components-dir"
+
+//=========================
+// @@ ++ Layout
+//=========================
+@import "03-layout/layout-dir"
 
 
 //=======================
 // @@ ++ State
 //=======================
-@import "state/mediaquery";
-@import "state/underconstruction";
+@import "04-state/state-dir";
+
 
 //=======================
 // @@ ++ Theme
