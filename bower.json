@@ -1,0 +1,20 @@
+{
+  "name": "webshop_theme",
+  "homepage": "https://github.com/illutek/tubes-store",
+  "authors": [
+    "illutek <stefanvandenborne@gmail.com>"
+  ],
+  "description": "For the tubes-eletro store",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -4,11 +4,11 @@ description = Webshop voor de tubes verkoop Alcon
 core = 7.x
 
 ;CSS
-stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = bower_components/bootstrap/dist/css/bootstrap.min.css
 stylesheets[all][] = css/style.css
 
 ;JS
-scripts[]   =   js/bootstrap.min.js
+scripts[]   =   bower_components/bootstrap/dist/js/bootstrap.min.js
 scripts[]   =   js/to_top.js
 
 ;REGIONS
